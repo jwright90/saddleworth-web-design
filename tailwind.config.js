@@ -7,10 +7,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'diggle-green': '#A0AB66'
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'saddleworth': `url('/saddleworth_1.jpg')`,
       },
     },
   },
