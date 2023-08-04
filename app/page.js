@@ -13,13 +13,13 @@ export default function Home() {
             layout="fill"
             objectFit="cover"
             alt="Saddleworth Landscape Photoshot with Mcr in Background"
-            className="opacity-[25%] z-10 pointer-events-none"
+            className="opacity-[70%] z-10 pointer-events-none"
           />
 
           <div className="flex flex-column flex-wrap justify-center content-end pb-12">
-            <h1 className=" text-[120px] font-bold text-center leading-[110px] mb-[50px] basis-full place-self-end ">Saddleworth <br></br>Web Design</h1>
+            <h1 className=" text-black text-[120px] font-bold text-center leading-[110px] mb-[50px] basis-full place-self-end ">Saddleworth <br></br>Web Design</h1>
 
-            <h3 className="text-white text-[2rem] max-w-[760px] leading-10 font-light text-center self-start ">
+            <h3 className="text-black text-[2rem] max-w-[760px] leading-10 font-light text-center self-start ">
               Helping small businesses to boost their sales through better websites
             </h3>
           </div>
