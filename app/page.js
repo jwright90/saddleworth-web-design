@@ -16,11 +16,11 @@ export default function Home() {
               className="absolute"
             />
             <div className="absolute w-full h-full bg-gray-900 bg-opacity-[35%] flex flex-col justify-center px-8">
-              <h1 className="text-8xl font-extrabold text-center text-white mb-12">Saddleworth <br></br> Web Design</h1>
-              <h3 className="text-4xl text-center text-white max-w-[800px] mx-auto mb-12">Helping small businesses to grow sales through online presence</h3>
-              <button className="rounded-full border-2 w-[400px] h-[60px] mx-auto text-2xl bg-diggle-green shadow-black shadow-2xl">Get a free website</button>
-              <div className="text-center mt-4 max-w-[600px] mx-auto text-sm">
-                Limited time offer... if you like the result then you will provide a testimonial, <br></br> and we ask that you pay what you feel it's worth.
+              <h1 className="text-8xl font-extrabold text-center text-white mb-8">Saddleworth <br></br> Web Design</h1>
+              <h3 className="text-4xl text-center text-white max-w-[800px] mx-auto mb-12 font-light">Helping small businesses to grow sales through online presence</h3>
+              <button className="font-medium rounded-full border-2 w-[400px] h-[60px] mx-auto text-2xl bg-diggle-green shadow-black shadow-2xl">Get a free website</button>
+              <div className="text-center mt-4 max-w-[600px] mx-auto text-sm font-light italic">
+                If you like the result then we ask for a testimonial, <br></br> pay what you feel it's worth (as much or as little as you like)
               </div>
             </div>
           </div>
