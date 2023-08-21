@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'diggle-green': '#A0AB66'
+        'diggle-green': '#A0AB66',
+        'cobalt-blue' : '#22293C',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
