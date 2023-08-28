@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import HowItWorks from './HowItWorks'
 
 export default function Home() {
 
@@ -6,7 +7,7 @@ export default function Home() {
     <>
       {/* Landing Page */}
 
-      <div className="min-h-screen">
+      <div className="min-h-screen text-white">
           <div className="relative w-screen h-screen max-w-full">
           <Image 
               src="/saddleworth_1.jpg"
@@ -28,7 +29,7 @@ export default function Home() {
 
       {/* YouTube Video & About Section */}
 
-      <div className="min-h-screen w-screen bg-cobalt-blue flex flex-col lg:px-40 md:px-20 py-12">
+      <div className="min-h-screen w-screen bg-cobalt-blue flex flex-col lg:px-40 md:px-20 py-12 text-white">
         <div className="mb-[80px] bg-gray-300 w-[100%] h-[500px] rounded-lg text-gray-400 text-8xl text-center flex flex-col justify-center self-center">Youtube Video</div>
         <div className="flex justify-between xl:space-x-40 lg:space-x-20 md:space-x-12">
           <div className="flex flex-col">
@@ -48,30 +49,23 @@ export default function Home() {
 
       {/* How it works section */}
 
-      <div className="flex flex-col">
-        <div className="relative h-screen">
-          <Image 
-              src="/consultation.png"
-              alt=""
-              layout="fill"
-              objectFit="cover"
-              className="absolute"
-          />
-          <div className="absolute h-screen bg-gray-900 bg-opacity-[50%] flex justify-between px-40 items-center">
-            <div className="h-[100%] flex flex-col">
-              <div className="text-[600px] font-bold text-diggle-green h-[600px]">1</div>
-              <div className="2xl:text-8xl xl:text-7xl lg:text-6xl font-extrabold absolute top-[50%] 2xl:w-[50%] lg:w-[500px]">Consultation & Initial Brief</div>
-            </div>
-            <div className="font-light xl:text-3xl lg:text-2xl max-w-[48%]">We will discuss what it is that you need your website to do and the brand image that you want to portray. <br></br> <br></br>It may be that you need to better educate your customer on your offering, improve the overall feel and authenticity of the website, to build trust, or generate more sales through better structure and call-to-actions.</div>
-          </div>
-        </div>
+      <div className="flex flex-col text-white">
+
+        <HowItWorks 
+        image={"/consultation.png"}
+        number={"1"}
+        heading={"Consultation & Initial Brief"}
+        p1={`We will discuss what it is that you need your website to do and the brand image that you want to portray. `}
+        p2={`It may be that you need to better educate your customer on your offering, improve the overall feel and authenticity of the website, to build trust, or generate more sales through better structure and call-to-actions.`}
+        />
+
         <div className="relative h-screen">
           <Image 
               src="/design.png"
               alt=""
               layout="fill"
               objectFit="cover"
-              className="absolute blur-[3px] mt-[4px]"
+              className="absolute blur-[3px] mt-[3px]"
           />
           <div className="absolute h-screen bg-gray-900 bg-opacity-[70%] flex flex-row-reverse px-40 items-center">
             <div className="h-[100%] flex flex-col mr-auto">
@@ -81,22 +75,15 @@ export default function Home() {
             <div className="font-light text-4xl max-w-[48%] mr-auto ">We will discuss what it is that you need your website to do and the brand image that you want to portray. <br></br> <br></br>It may be that you need to better educate your customer on your offering, improve the overall feel and authenticity of the website, to build trust, or generate more sales through better structure and call-to-actions.</div>
           </div>
         </div>
-        <div className="relative h-screen">
-          <Image 
-              src="/build.png"
-              alt=""
-              layout="fill"
-              objectFit="cover"
-              className="absolute blur-[2px] "
-          />
-          <div className="absolute h-screen bg-gray-900 bg-opacity-[50%] flex justify-between px-40 items-center">
-            <div className="h-[100%] flex flex-col">
-              <div className="text-[600px] font-bold text-diggle-green h-[600px]">3</div>
-              <div className="2xl:text-8xl xl:text-7xl lg:text-6xl font-extrabold absolute top-[50%] 2xl:w-[600px] lg:w-[500px]">Build & Maintain</div>
-            </div>
-            <div className="font-light xl:text-3xl lg:text-2xl max-w-[48%]">We will discuss what it is that you need your website to do and the brand image that you want to portray. <br></br> <br></br>It may be that you need to better educate your customer on your offering, improve the overall feel and authenticity of the website, to build trust, or generate more sales through better structure and call-to-actions.</div>
-          </div>
-        </div>
+
+        <HowItWorks 
+        image={"/build.png"}
+        number={"3"}
+        heading={"Consultation & Initial Brief"}
+        p1={`We will discuss what it is that you need your website to do and the brand image that you want to portray.  `}
+        p2={`It may be that you need to better educate your customer on your offering, improve the overall feel and authenticity of the website, to build trust, or generate more sales through better structure and call-to-actions.`}
+        />
+
       </div>
 
     </>
